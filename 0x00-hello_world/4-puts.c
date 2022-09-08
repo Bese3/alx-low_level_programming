@@ -1,6 +1,5 @@
 #!/bin/bash
 #include<stdio.h>
-i
 /**
  * main - print the string function
  * 
