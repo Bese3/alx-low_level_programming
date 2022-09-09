@@ -1,1 +1,3 @@
-c low level programming  begininng
+c low level programming 
+hello world
+variables and if conditions.
