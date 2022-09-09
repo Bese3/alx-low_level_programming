@@ -19,7 +19,7 @@ for (high = med + 1; high < 10; high++)
 putchar(low + '0');
 putchar(med + '0');
 putchar(high + '0');
-if (low < 8)
+if (low < 7)
 {
 putchar(',');
 putchar(' ');
