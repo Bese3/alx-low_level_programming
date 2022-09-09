@@ -14,7 +14,7 @@ for (low = 0; low < 10; low++)
 {
 for (med = low + 1; med < 10; med++)
 {
-for (high = low + 1; high < 10; high++)
+for (high = med + 1; high < 10; high++)
 {
 putchar(low + '0');
 putchar(med + '0');
