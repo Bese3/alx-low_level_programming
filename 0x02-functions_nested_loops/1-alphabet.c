@@ -18,4 +18,5 @@ _putchar(first);
 first++;
 }
 _putchar('\n');
+return (0);
 }
