@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
 * puts2 - a function that prints every other character of
 * a string, followed by a new line, to stdout
