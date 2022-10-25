@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
 * sum_listint - a function that returns the sum of all the

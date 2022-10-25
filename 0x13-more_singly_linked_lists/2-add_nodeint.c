@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include "lists.h"
 
 /**
@@ -7,10 +8,9 @@
 * @n: the data to be added in the new node
 * Return: returns the address of the new element
 */
-
-listint_t *add_nodeinnt(listint_t **head , const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-  listint_t *new =malloc(sizeof(listint_t));
+	listint_t *new = malloc(sizeof(listint_t));
 
 	if (new == NULL)
 		return (NULL);
@@ -30,5 +30,4 @@ listint_t *add_nodeinnt(listint_t **head , const int n)
 
 
 	return (new);
-
 }
