@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+/dj n**
  * binary_to_uint - converts binary number to an unsigned int
  * @b: the string containing 0's and 1's to be converted to integer
  *
@@ -46,20 +46,5 @@ int power(int num, int power)
 	}
 	return (result);
 }
-int main(void)
-{
-    unsigned int n;
 
-    n = binary_to_uint("1");
-    printf("%u\n", n);
-    n = binary_to_uint("101");
-    printf("%u\n", n);
-    n = binary_to_uint("1e01");
-    printf("%u\n", n);
-    n = binary_to_uint("1100010");
-    printf("%u\n", n);
-    n = binary_to_uint("0000000000000000000110010010");
-    printf("%u\n", n);
-    return (0);
-}
 
