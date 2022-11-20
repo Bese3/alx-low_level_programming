@@ -1,52 +1,25 @@
 #include<stdio.h>
-/*int main ()
-{
-    int a =3;
-    int b =2;
-   int  product =a*b;
-    printf("%d" , product);
-}*/
-/*int main (void)
-{
-    int a;
-    printf("input any number\n");
-    scanf("%d" , &a);
-    if (a%2 == 0)
-        printf ("a: %d is even\n " ,a);
-    else
-        printf("a : %d is odd\n" ,a);
-  g  return (0);
-}*/
-int main(void)
-{
-    int a , b , c;
-    for (int i = 0; i > 3;i++)
-    {
-        printf("input %d number\n" , i);
+#include<sys/types.h>
+#include<unistd.h>
+//#include<sys/wait.h>
 
-    }
-    scanf("%d %d %d" , a , b , c);
-    if (a >  b && a > c)
-    {
-        if (b > c)
-        printf("1st number = %d \n 2nd number = %d \n 3rd number = %d \n" , a ,b , c);
-        else
-            printf("1st number = %d \n 2nd number = %d \n 3rd number = %d \n" , a , c , b);
-    }
-    else if (b > a && b > c)
-    {
-        if (a > c)
-            printf("1st number = %d \n 2nd number = %d \n 3rd number = %d \n" , b , a , c);
-        else
-            printf("1st number = %d \n 2nd number = %d \n 3rd number = %d \n" , b ,c ,a);
+int main ()
+{
 
-    }
-    else if (c > a && c > b)
+    pid_t = pid;
+    pid = fork();
+    if (pid == -1)
+        return 1;
+    if (pid == 0)
     {
-        if (a > b)
-            printf("1st number = %d \n 2nd number = %d \n 3rd number = %d \n" , c , a , b);
-        else
-            printf("1st number = %d \n 2nd number = %d \n 3rd number = %d \n" , c ,b ,a);
+        ssize_t n = 30;
+     char *buf =malloc(sizeof(char)*n);
+     printf("enter ur name\n");
+      getline(&buf , &n ,stdin);
     }
-return (0);
+    else {
+        wait(pid);
+    printf("parent process is done");
+    }
+    return 0;
 }
