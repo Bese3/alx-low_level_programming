@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
+#include <sys/wait.h>
 // A sample comparator function that is used
 // for sorting an integer array in ascending order.
 // To sort any array for any other data type and/or
@@ -26,8 +26,8 @@ int main ()
 
 int main(void)
 {
- pid_t my_pid;
- my_pid = getpid();
- printf("%u\n" , my_pid);
+ int my_pid = fork();
+
+ printf("%d\n" , getpid());
  return (0);
 }
