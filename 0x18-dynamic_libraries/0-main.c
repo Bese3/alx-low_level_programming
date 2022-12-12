@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+#include <string.h>
+
 
 
 /**
@@ -18,7 +20,7 @@ int main(void)
 
 {
 
-	    printf("%d\n", _strlen("My Dyn Lib"));
+	    printf("%ld\n", strlen("My Dyn Lib"));
 
 	        return (1);
 
