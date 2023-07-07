@@ -1,10 +1,12 @@
 #include"hash_tables.h"
 
-/*
-* @brief hash_table_create creates a hash table
-* @param size  this defines the size of the hash table
-* @return return a hash_table_t type table
-*/
+/**
+ * hash_table_create - creates a new hash table
+ * @size: size of the hash table
+ *
+ * Return: a new hashtable with size @size, NULL if malloc fails to allocate
+ * memory
+ */
 hash_table_t *hash_table_create(unsigned long int size)
 {
 unsigned long int i;
