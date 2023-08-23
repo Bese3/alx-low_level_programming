@@ -1,7 +1,15 @@
 #!/usr/bin/python3
+"""
+`island_perimeter` calculates grid perimeter
+"""
 
 
 def island_perimeter(grid):
+    """
+    The function island_perimeter calculates
+    the perimeter of an island represented by a grid, where
+    each cell is either land (1) or water (0).
+    """
     hor = 1
     ver = 1
     if type(grid) is not list:
@@ -26,15 +34,3 @@ def island_perimeter(grid):
     if per > 100:
         return 100
     return per
-
-
-
-if __name__ == '__main__':
-    grid = [
-        [0, 0, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0, 0],
-        [0, 1, 1, 1, 0, 0],
-        [0, 0, 0, 0, 0, 0]
-    ]
-    island_perimeter(grid)
