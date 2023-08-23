@@ -5,32 +5,33 @@
 
 
 def island_perimeter(grid):
-    """
-    The function island_perimeter calculates
-    the perimeter of an island represented by a grid, where
-    each cell is either land (1) or water (0).
-    """
-    hor = 1
-    ver = 1
-    if type(grid) is not list:
-        raise TypeError("typeerror")
-    if type(grid[0]) is not list:
-        raise TypeError("innerlist error")
-    j = 0
-    while j < len(grid):
-        i = 0
-        while i < len(grid[j]):
-            if grid[j][i] == 0:
-                i += 1
-                continue
-            if grid[j][i + 1] == 1:
-                hor += 1
-            if grid[j + 1][i] == 1:
-                ver += 1
-            # print(f"i = {i}, j = {j}, hor = {hor}, ver = {ver}")
-            i += 1
-        j += 1
-    per = 2*(hor + ver)
-    if per > 100:
-        return 100
-    return per
+    """Method tha returns the perimeter of the island described in grid."""
+    # p = perimeter, i = iteration 1, j = iteration2
+    p = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == 1:
+                try:
+                    if grid[i - 1][j] == 0 or i == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+
+                try:
+                    if grid[i + 1][j] == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+
+                try:
+                    if grid[i][j - 1] == 0 or j == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+
+                try:
+                    if grid[i][j + 1] == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+    return p
