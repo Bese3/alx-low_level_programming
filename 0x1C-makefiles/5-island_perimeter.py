@@ -6,15 +6,8 @@
 
 def island_perimeter(grid):
     """Method tha returns the perimeter of the island described in grid."""
-    neighbour_grid = [item[:] for item in grid]
-    y = 0
-    while y < len(grid):
-        z = 0
-        my_grid = grid[y]
-        while z < len(my_grid):
-            neighbour_grid[y][z] = 0
-            z += 1
-        y += 1
+    neighbour_grid = [[0 for i in range(len(grid[0]))]
+                      for i in range(len(grid))]
     i = 0
     while i < len(grid):
         my_list = grid[i]
